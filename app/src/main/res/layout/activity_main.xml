@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="2"
+    android:background="@color/bgColor"
+    android:padding="@dimen/tablePad">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_column="0"
+            android:layout_span="7"
+            android:indeterminate="false" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/enterTicker"
+            android:id="@+id/textView"
+            android:layout_column="0"
+            android:clickable="true"
+            android:capitalize="characters"
+            android:digits="5"
+            android:singleLine="true"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edit_text"
+            android:id="@+id/tickerEntry"
+            android:layout_column="2"
+            android:layout_span="5"
+            android:lines="0"
+            android:clickable="false"
+            android:capitalize="characters"
+            android:editable="true"
+            android:imeOptions="actionDone"
+            android:gravity="center_horizontal"
+            android:textColor="@color/textEntry"
+            android:textSize="@dimen/entry_size"
+            android:hint="@string/placeholder"
+            android:textColorHint="@color/textEntry"
+            android:inputType="textCapCharacters"
+            android:maxLength="5"
+            android:minLines="1"
+            android:maxLines="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="@dimen/separator">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/name"
+            android:id="@+id/symbollabel"
+            android:layout_column="0"
+            android:clickable="true"
+            android:capitalize="characters"
+            android:digits="5"
+            android:singleLine="true"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edit_text"
+            android:id="@+id/yourcompany"
+            android:layout_column="2"
+            android:layout_span="5"
+            android:clickable="true"
+            android:capitalize="characters"
+            android:editable="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/entry_size" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lastTradePrice"
+            android:id="@+id/lasttradelavel"
+            android:layout_column="0"
+            android:clickable="true"
+            android:capitalize="characters"
+            android:digits="5"
+            android:singleLine="true"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edit_text"
+            android:id="@+id/lasttrade"
+            android:layout_column="2"
+            android:layout_span="5"
+            android:clickable="true"
+            android:capitalize="characters"
+            android:editable="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/entry_size" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lastTradeTime"
+            android:id="@+id/lasttimelabel"
+            android:layout_column="0"
+            android:clickable="true"
+            android:capitalize="characters"
+            android:digits="5"
+            android:singleLine="true"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edit_text"
+            android:id="@+id/lasttime"
+            android:layout_column="2"
+            android:layout_span="5"
+            android:clickable="true"
+            android:capitalize="characters"
+            android:editable="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/entry_size" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/change"
+            android:id="@+id/changelabel"
+            android:layout_column="0"
+            android:clickable="true"
+            android:capitalize="characters"
+            android:digits="5"
+            android:singleLine="true"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edit_text"
+            android:id="@+id/change"
+            android:layout_column="2"
+            android:layout_span="5"
+            android:clickable="true"
+            android:capitalize="characters"
+            android:editable="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/entry_size" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/yearRange"
+            android:id="@+id/rangelabel"
+            android:layout_column="0"
+            android:clickable="true"
+            android:capitalize="characters"
+            android:digits="5"
+            android:singleLine="true"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edit_text"
+            android:id="@+id/range"
+            android:layout_column="2"
+            android:layout_span="5"
+            android:clickable="true"
+            android:capitalize="characters"
+            android:editable="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/entry_size" />
+    </TableRow>
+</TableLayout>
